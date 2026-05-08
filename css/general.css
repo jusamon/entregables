@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Estilos de LETRA -- */
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aclonica-regular {
+  font-family: "Aclonica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* -- -- */
+
+#cabeza {
+    display: flex;
+    flex-direction: row;
+}
+
+#cajaLogo {
+    background-color: #003273;
+    width: 150px;
+    height: 100px;
+    aspect-ratio: 1/1;
+}
+
+#textoLogo {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#textoL1 {
+    color: #429c29;
+    text-align: left;
+    background-color: #003273;
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px 1px rgb(225 225 225), -0.5px -0.5px 1px rgb(225 225 225), 0.5px 0.5px 1px rgb(225 225 225), -0.5px -0.5px 1px rgb(225 225 225);
+}
+#textoL2 {
+    color: #b1dba4;
+    text-align: left;
+    background-color: #003273;
+    font-size: 20px;
+}
