@@ -7,7 +7,7 @@
 /* -- Estilos de LETRA -- */
 .black-ops-one-regular {
   font-family: "Black Ops One", system-ui;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -31,35 +31,64 @@
 }
 
 
-/* -- -- */
+/* --text-shadow: 0.5px 0.5px 2px rgb(225 225 225), -0.5px -0.5px 2px rgb(225 225 225), 0.5px 0.5px 2px rgb(225 225 225), -0.5px -0.5px 2px rgb(225 225 225); -- */
 
 #cabeza {
     display: flex;
     flex-direction: row;
+    background-color: #fefefe;
+    box-shadow: 5px 2px 8px 1px #003273;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    padding-left: 30px;
 }
 
 #cajaLogo {
-    background-color: #003273;
-    width: 150px;
+    width: 20px;
     height: 100px;
-    aspect-ratio: 1/1;
+}
+
+#cajaLogo img {
+  filter: contrast(50%);
 }
 
 #textoLogo {
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 50px;
+    height: 100px;
+    padding-left: 100px;
+    text-align: center;
+  align-items: center
 }
 
 #textoL1 {
-    color: #429c29;
-    text-align: left;
-    background-color: #003273;
-    font-size: 50px;
-    text-shadow: 0.5px 0.5px 1px rgb(225 225 225), -0.5px -0.5px 1px rgb(225 225 225), 0.5px 0.5px 1px rgb(225 225 225), -0.5px -0.5px 1px rgb(225 225 225);
+    color: #003273;
+    font-size: 40px;    
 }
+
 #textoL2 {
-    color: #b1dba4;
-    text-align: left;
-    background-color: #003273;
-    font-size: 20px;
+    color: #023e73;
+    font-size: 18px;
+}
+
+#menu {
+  background-color: #fefefe;
+  height: 100px;
+  width: 100%;
+  margin-left: 200px;
+  text-align: center;
+  align-items: center;
+}
+
+#menu li {
+  color: #88bf78;
+  list-style: none;
+  display: inline-block;
+  padding: 2%;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #003273;
+  font-size: 18px;
 }
