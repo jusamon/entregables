@@ -1,0 +1,112 @@
+
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#cabeza {
+  width: 100%;
+  position: sticky;
+  top:0%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: #fefefe;
+  box-shadow: 5px 2px 8px 1px #3c5487;
+  gap: 10%;
+  padding: 20px;
+  justify-content: center;
+}
+
+#cajaLogo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+
+#cajaLogo img {
+  height: 60px;
+  filter: contrast(40%);
+  justify-self: left;
+}
+
+#textoL1 {
+  color: #003273;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  text-align: left;
+  align-items: start;
+}
+
+#textoL2 {
+  color: #023e73;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+#cajaMenu {
+  width: 100%;
+  color:#023e73;
+}
+
+#menu {
+  display: inline-block;
+  white-space: nowrap;
+  align-content: end;
+  padding-right: 40px;
+}
+
+#menu li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #003273;
+  font-size: 15px;  
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
