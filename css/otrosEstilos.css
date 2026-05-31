@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
+/* -- Estilos de LETRA -- */
 .black-ops-one-regular {
   font-family: "Black Ops One", system-ui;
   font-weight: 300;
@@ -20,93 +26,194 @@
 }
 
 
-#cabeza {
-  width: 100%;
-  position: sticky;
-  top:0%;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  background-color: #fefefe;
-  box-shadow: 5px 2px 8px 1px #3c5487;
-  gap: 10%;
-  padding: 20px;
-  justify-content: center;
+/* -- Estilos GENERALES -- */
+html {
+  scroll-behavior: smooth;
 }
 
-#cajaLogo {
-  display: flex;
-  flex-direction: row;
+body {
+  background: #f4f8fd;
+}
+
+
+/* -- Estilo CABEZA -- */
+.cabeza {
+  position: sticky;
+  top:0%;
+  z-index: 99;
+  background: #fefefe;
+  border-bottom: 1px solid #00327314;
+  display: inline-flex;
   width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 8px 18px 1px rgba(145, 145, 145, 0.1);
+}
+
+.cajaLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;  
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fotoLogo {
+  width: auto;
+  height: 90px;
+  filter: contrast(0.8);
+}
+
+.texto-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.textoL1 {
+  font-size: 1.75rem;
+  color:#003273;
+}
+
+.textoL2 {
+  color: #1463cc;
+  font-size: 0.85rem;
+}
+
+.cajaMenu {
+  align-content: center;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  padding:5px;
+  margin: 5px;
+}
+
+.menu li {
+  display: block;
   gap: 10px;
 }
 
-#cajaLogo img {
-  height: 60px;
-  filter: contrast(40%);
-  justify-self: left;
-}
-
-#textoL1 {
-  color: #003273;
-  display: flex;
-  flex-direction: column;
-  font-size: 40px;
-  text-align: left;
-  align-items: start;
-}
-
-#textoL2 {
-  color: #023e73;
-  font-size: 15px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-#cajaMenu {
-  width: 100%;
-  color:#023e73;
-}
-
-#menu {
-  display: inline-block;
-  white-space: nowrap;
-  align-content: end;
-  padding-right: 40px;
-}
-
-#menu li {
-  list-style: none;
-  padding: 10px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-#menu li a {
+.menu a {
   text-decoration: none;
   color: #003273;
-  font-size: 15px;  
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover, 
+.menu a:focus-visible {
+  color: #1463cc;
+}
+
+/* -- Estilo SESION -- */
+.signin-card {
+  max-width: 440px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 40px rgba(0, 50, 115, 0.08);
+  padding: 2rem;
+}
+
+.brand-logo {
+  height: 50px;
+  filter: contrast(0.8);
+}
+
+.brand-title {
+  font-family: "Black Ops One", system-ui, sans-serif;
+  font-size: 1.75rem;
+  color: #003273;
+  margin-bottom: 0;
+}
+
+.brand-tag {
+  color: #1463cc;
+  font-size: 0.9rem;
 }
 
 
-.form-signin {
-  max-width: 330px;
-  padding: 1rem;
+/*-- Estilo VENDEDORES -- */
+.vendedores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+.vendedores .card .card-body {
+  background: linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(3,50,115,0.08);
+  overflow: hidden;
+  color: #033273;
+  width: 100%;
+  max-width: 18rem;
+  margin-inline: auto;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.vendedores .card:hover {
+  background-color: #003273;
 }
 
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+
+/* -- Estilo FOOTER -- */
+.site-footer {
+  background: #003273;
+  color: #fff;
+  padding: 1.5rem 0;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+
+/* -- Estilos RESPONSIVE -- */
+@media (max-width: 992px) {
+  .cajaLogo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cajaLogo {
+    justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .cabeza {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .vendedores {
+    grid-template-columns: minmax(0, 300px);
+    justify-content: center;
+  }
 }

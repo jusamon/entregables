@@ -1,251 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharSYS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/general.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pharSYS</title>
+    <link rel="stylesheet" href="css/general.css">    
 </head>
 
 <body>
-    <section id="cabeza">
-        <div id="cajaLogo">
-            <img src="images/logo-sin-fondo.png" id="fotoLogo">
-            <span id="textoL1" class="black-ops-one-regular">pharSYS<span id="textoL2" class="inter">DATABASE</span></span>            
+    <header class="cabeza">
+        <div class="cajaLogo">
+            <a href="#hero" class="brand-link">
+                <img src="images/logo-sin-fondo.png" class="fotoLogo">
+                <div class="texto-logo">
+                    <span class="textoL1 black-ops-one-regular">pharSYS</span><span class="textoL2 inter">DATABASE</span>
+                </div>
+            </a>      
         </div>
-        <div id="cajaMenu">
-            <nav id="menu" class="inter">
-                <ul>
-                    <strong>
-                        <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#beneficios">Beneficios</a></li>
-                        <li><a href="#seguridad">Seguridad</a></li>
-                        <li><a href="#soporte">Soporte</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </strong>
-                </ul>
-            </nav>
-        </div>
-        <div id="botonesCabeza">
-            <a href="sesion.html"><button id="inSesion" class="inter"><strong>Iniciar sesión</strong></button></a>
-            <a href="prueba.html"><button id="pruebaGrat" class="inter">Prueba Gratis</button></a>
-        </div>
-    </section>
+        
+        <nav class="cajaMenu">
+            <ul class="menu inter">
+                <strong>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#seguridad">Seguridad</a></li>
+                    <li><a href="#soporte">Soporte</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </strong>
+            </ul>
+        </nav>
 
-    <section id="hero">
-        <span id="cont1" class="inter">⁜ Nueva era en gestión farmacéutica</span>
-        <br><br>
-        <h1 class="archivo-black-regular">Gestión inteligente para tu <br>farmacia, <span id="tituloColor">todo en un solo <br>lugar</span></h1>
-        <br><br>
-        <p class="inter"><strong>pharSYS</strong> te permite organizar medicamentos, controlar inventario, <br>gestionar clientes y supervisar ventas de manera eficiente, segura y desde <br>cualquier dispositivo.</p>
-        <br><br>
-        <div id="botonesHero">
-            <a href="prueba.html"><button id="pruebaGrat1" class="inter">Prueba Gratuita  →</button></a>
-            <a href="demo.html"><button id="verDemo" class="inter">Ver demo</button></a>
+        <div class="botonesCabeza">
+            <a href="sesion.html" class="button button-scondary inter">Iniciar sesión</a>
+            <a href="prueba.html" class="button button-primary inter">Prueba Gratis</a>
         </div>
-    </section>
+    </header>
 
-    <section id="inicio">
-        <img src="images/diagramaBD.jpeg" id="fotoInicio">
-    </section>
+    <main>
+        <section id="hero" class="seccion-hero">
+            <div class="container cont1">
+                <p class="texto-cont1 inter">⁜ Nueva era en gestión farmacéutica</p>
+                <h1 class="hero-titulo archivo-black-regular">Gestión inteligente para tu farmacia, <span class="tituloColor">todo en un solo lugar</span></h1>
+                <p class="hero-copy inter"><strong>pharSYS</strong> te permite organizar medicamentos, controlar inventario, gestionar clientes y supervisar ventas de manera eficiente, segura y desde cualquier dispositivo.</p>
+                <div class="botonesHero">
+                    <a href="prueba.html" class="button button-primary button-lg inter">Prueba Gratuita  →</a>
+                    <a href="demo.html" class="button button-outline button-lg inter">Ver demo</a>
+                </div>
+        </section>
 
-    <section id="servicios" class="inter">
-        <h3 id="mini-title">SERVICIOS</h3>
-        <h2>Todo lo que tu farmacia necesita</h2>
-        <span id="textoServ">Potencia tu operación con herramientas diseñadas por expertos en el sector<br> farmacéutico.</span>
-        <div class="card-container">
-            <div class="card">
-                <img src="images/inventario.png" alt="" class="card-image1">
-                <div class="card-content">
-                    <h3 class="card-title">Inventario en tiempo real</h3>
-                    <p class="card-text">Control automatizado de existencias, lotes y fechas de vencimiento para evitar desabastecimiento y asegurar el stock.</p>
+        <section id="inicio" class="seccion-intro">
+            <div class="container">
+                <img src="images/diagramaBD.jpeg" class="fotoInicio">
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion seccion-serv inter">
+            <div class="container"> 
+                <span class="mini-title">SERVICIOS</span>
+                <h2 class="titulo-seccion">Todo lo que tu farmacia necesita</h2>
+                <p class="textoSeccion">Potencia tu operación con herramientas diseñadas por expertos en el sector farmacéutico.</p>
+                
+                <div class="card-container">
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-blue">
+                            <img src="images/inventario.png" alt="">
+                        </div>
+                        <h3>Inventario en tiempo real</h3>
+                        <p>Control automatizado de existencias, lotes y fechas de vencimiento para evitar desabastecimiento y asegurar el stock.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-green">
+                            <img src="images/seguridad.png" alt="">
+                        </div>
+                        <h3>Seguridad de datos</h3>
+                        <p>Encriptación de datos de pacientes y transacciones bajo los más estrictos estándares de seguridad y normativas de salud.</p>                        
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-peach">
+                            <img src="images/accesoMed.png" alt="">
+                        </div>
+                        <h3>Acceso rápido</h3>
+                        <p>Acceso instantáneo a miles de registros de medicamentos, gracias a la búsqueda inteligente por nombre, principios activos y equivalencias en un sólo lugar.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-blue">
+                            <img src="images/gestion.png" alt="">
+                        </div>
+                        <h3>Gestión de clientes y ventas</h3>
+                        <p>Registro detallado de pacientes, historial de compras y un punto de venta (POS) ágil para una atención eficiente y personalizada.</p>                    
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-green">
+                            <img src="images/reportes.png" alt="">
+                        </div>
+                        <h3>Reportes avanzados</h3>
+                        <p>Gráficas dinámicas e informes detallados sobre rotación de productos, tendencias de ventas mensuales y rentabilidad.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon card-icon-peach">
+                            <img src="images/nube.png" alt="" class="card-image3">
+                        </div>
+                        <h3>100% en la nube</h3>
+                        <p>Accede a toda la información de tu farmacia desde cualquier lugar y dispositivo con conexión a internet, sin necesidad de instalaciones complejas.</p>
+                    </article>
                 </div>
             </div>
-            <div class="card" id="card-det2">
-                <img src="images/seguridad.png" alt="" class="card-image2">
-                <div class="card-content">
-                    <h3 class="card-title">Seguridad de datos</h3>
-                    <p class="card-text">Encriptación de datos de pacientes y transacciones bajo los más estrictos estándares de seguridad y normativas de salud.</p>
+        </section>
+
+        <section id="beneficios" class="seccion seccion-beneficios inter">
+            <div class="container">
+                <span class="mini-title">BENEFICIOS</span>
+                <h2 class="titulo-seccion">¿Por qué elegir pharSYS?</h2>
+                <p class="textoSeccion">Compara y descubre las ventajas frente a otras soluciones del mercado.</p>
+                
+                <div class="modulo-tabla">
+                    <table class="tablaComparativa">
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>pharSYS</th>
+                                <th>Otros</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inventario en tiempo real</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Alertas de vencimiento automáticas</td>
+                                <td>✔</td>
+                                <td>✖</td>
+                            </tr>
+                            <tr>
+                                <td>Reportes con IA predictiva</td>
+                                <td>✔</td>
+                                <td>✖</td>
+                            </tr>
+                            <tr>
+                                <td>Soporte 24/7 en español</td>
+                                <td>✔</td>
+                                <td>✖</td>
+                            </tr>
+                            <tr>
+                                <td>Integración con facturación electrónica</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Sin costos de instalación</td>
+                                <td>✔</td>
+                                <td>✖</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="card" id="card-det3">
-                <img src="images/accesoMed.png" alt="" class="card-image3">
-                <div class="card-content">
-                    <h3 class="card-title">Acceso rápido</h3>
-                    <p class="card-text">Acceso instantáneo a miles de registros de medicamentos, gracias a la búsqueda inteligente por nombre, principios activos y equivalencias (genéricos) en un sólo lugar.</p>
+        </section>
+
+        <section id="seguridad" class="seccion seccion-seguridadinter">
+            <div class="container seguridadGrid">
+                <div class="copiaSeguridad">
+                    <span class="mini-title">SEGURIDAD</span>
+                    <h2 class="titulo-seccion">Tus datos protegidos con tecnología de nivel bancario</h2>
+                    <p class="textoSeccion">Implementamos las mejores prácticas de la industria para que tu información y la de tus clientes esté siempre a salvo.</p>
+                    
+                    <div class="seguridadCaract">
+                        <article class="segItem">
+                            <img src="images/candado.png" alt="" class="segIcon">
+                            <div><h3>Cifrado AES-256</h3><p>Toda la información viaja y se almacena cifrada.</p></div>
+                        </article>
+                        <article class="segItem">
+                            <img src="images/nube2.png" alt="" class="segIcon">
+                            <div><h3>Respaldos automáticos</h3><p>Copias de seguridad cada hora en múltiples regiones.</p></div>
+                        </article>
+                        <article class="segItem">
+                            <img src="images/seguridad2.png" alt="" class="segIcon">
+                            <div><h3>Cumplimiento normativo</h3><p>Alineado con GDPR, HIPAA y normativas locales.</p></div>
+                        </article>
+                    </div>
+                </div>
+            
+                <div class="seguridadGraf">
+                    <img src="images/estado.png" alt="" class="imagenSeg">
                 </div>
             </div>
-            <div class="card" id="card-det4">
-                <img src="images/gestion.png" alt="" class="card-image1">
-                <div class="card-content">
-                    <h3 class="card-title">Gestión de clientes y ventas</h3>
-                    <p class="card-text">Registro detallado de pacientes, historial de compras y un punto de venta (POS) ágil para una atención eficiente y personalizada.</p>
+        </section>
+
+        <section id="soporte" class="seccion seccion-soporte inter">
+            <div class="container">
+                <span class="mini-title">PREGUNTAS FRECUENTES</span>
+                <h2 class="titulo-seccion">Resolvemos tus dudas</h2>
+            
+                <div class="accordion" id="faqAcordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuánto tarda la implementación?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAcordion">
+                            <div class="accordion-body">
+                                La configuración inicial es rápida y se adapta a tu farmacia en pocos días, sin interrupciones en tu operación diaria.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Mis datos están seguros?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAcordion">
+                            <div class="accordion-body">
+                                Sí, utilizamos cifrado de nivel bancario, respaldos periódicos y medidas de acceso seguro para proteger toda la información.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Funciona sin conexión a internet?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"data-bs-parent="#faqAcordion">
+                            <div class="accordion-body">
+                                pharSYS es una plataforma en la nube que requiere conexión a internet, pero está optimizada para conexiones lentas y móviles.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Necesito instalar algo?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAcordion">
+                            <div class="accordion-body">
+                                No. pharSYS se accede desde el navegador y no requiere instalaciones locales ni hardware adicional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Hay período de prueba?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAcordion">
+                            <div class="accordion-body">
+                                Sí, ofrecemos una prueba gratuita de 14 días para que pruebes todas las funciones sin compromisos.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" id="card-det5">
-                <img src="images/reportes.png" alt="" class="card-image2">
-                <div class="card-content">
-                    <h3 class="card-title">Reportes avanzados</h3>
-                    <p class="card-text">Gráficas dinámicas e informes detallados sobre rotación de productos, tendencias de ventas mensuales y rentabilidad.</p>
+            </div>            
+        </section>
+
+        <section id="contacto" class="seccion seccion-contacto inter">
+            <div class="container contacto-cuadro">
+                <div class="copia-contacto">
+                    <h2>Lleva tu farmacia al siguiente nivel</h2>
+                    <p>Comienza tu prueba gratuita de 14 días. Sin tarjeta de crédito.</p>
                 </div>
-            </div>
-            <div class="card" id="card-det6">
-                <img src="images/nube.png" alt="" class="card-image3">
-                <div class="card-content">
-                    <h3 class="card-title">100% en la nube</h3>
-                    <p class="card-text">Accede a toda la información de tu farmacia desde cualquier lugar y dispositivo con conexión a internet, sin necesidad de instalaciones complejas.</p>
+                <div class="botonesContacto">
+                    <a href="prueba.html" class="button button-primary inter">Prueba Gratuita   →</a>
+                    <a href="contVentas.html" class="button button-secondary inter">Hablar con ventas</a>
                 </div>
-            </div>
+            </div>        
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="inter">© 2026 pharSYS. Soluciones seguras para la gestión farmacéutica.</p>
         </div>
-    </section>
-
-    <section id="beneficios" class="inter">
-        <h3 id="mini-title">BENEFICIOS</h3>
-        <h2>¿Por qué elegir pharSYS?</h2>
-        <span id="textoServ">Compara y descubre las ventajas frente a otras soluciones del mercado</span>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Característica</th>
-                    <th>pharSYS</th>
-                    <th>Otros</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Inventario en tiempo real</td>
-                    <td>✔</td>
-                    <td>✔</td>
-                </tr>
-                <tr>
-                    <td>Alertas de vencimiento automáticas</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-                <tr>
-                    <td>Reportes con IA predictiva</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-                <tr>
-                    <td>Soporte 24/7 en español</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-                <tr>
-                    <td>Integración con facturación electrónica</td>
-                    <td>✔</td>
-                    <td>✔</td>
-                </tr>
-                <tr>
-                    <td>Sin costos de instalación</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </section>
-
-    <section id="seguridad" class="inter">
-        <div id="seguridadTexto">
-            <h3 id="mini-title">SEGURIDAD</h3>
-            <h2>Tus datos protegidos con tecnología de nivel bancario</h2>
-            <span id="textoSeg">Implementamos las mejores prácticas de la industria para que tu información y la de tus clientes esté siempre a salvo.</span>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><img src="images/candado.png" alt="" id="segImg"></td>
-                        <td><h3>Cifrado AES-256</h3><span>Toda la información viaja y se almacena cifrada.</span></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/nube2.png" alt="" id="segImg"></td>
-                        <td><h3>Respaldos automáticos</h3><span>Copias de seguridad cada hora en múltiples regiones.</span></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/seguridad2.png" alt="" id="segImg"></td>
-                        <td><h3>Cumplimiento normativo</h3><span>Alineado con GDPR, HIPAA y normativas locales.</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="seguridadGraf">
-            <img src="images/estado.png" alt="">
-        </div>
-    </section>
-
-    <section id="soporte" class="inter">
-        <h3 id="mini-title">PREGUNTAS FRECUENTES</h3>
-        <h2>Resolvemos tus dudas</h2>
-        <ul>
-            <li>¿Cuánto tarda la implementación</li>
-            <li>¿Mis datos están seguros?</li>
-            <li>¿Funciona sin conexión a internet?</li>
-            <li>¿Necesito instalar algo?</li>
-            <li>¿Hay periodo de prueba?</li>
-        </ul>
-    </section>
-
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
-            </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
-            </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-            </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <section id="contacto" class="inter">
-        <div id="contacto-cuadro">
-            <h2>Lleva tu farmacia al siguiente nivel</h2>
-            Comienza tu prueba gratuita de 14 días. Sin tarjeta de crédito.
-        </div>
-        <div id="botonesContacto">
-            <a href="prueba.html"><button id="pruebaGrat2" class="inter">Prueba Gratuita   →</button></a>
-            <a href="contVentas.html"><button id="ventas" class="inter">Hablar con ventas</button></a>
-        </div>
-    </section>
-
-    <footer id="redes">
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
