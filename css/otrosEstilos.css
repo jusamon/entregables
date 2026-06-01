@@ -168,6 +168,18 @@ body {
   background-color: #003273;
 }
 
+/* -- Estilo PRUEBA -- */
+.imagenPrincipal {
+  width: 100%;
+  max-width: 920px;
+  padding: 0.75rem;
+  opacity: 0.2;
+}
+
+.infoPpal {
+  font-size:36px;
+  color: #003273;
+}
 
 /* -- Estilo FOOTER -- */
 .site-footer {
